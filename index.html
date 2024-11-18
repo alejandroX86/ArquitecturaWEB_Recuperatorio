@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Superhéroes con Simulación de Escritura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader">
+        <img src="loader.gif" alt="Cargando...">
+    </div>
+
+    <div class="title-container">
+        
+        <h1><span class="black-text">Universidad</span> <span class="dark-cyan-text">UNPAZ</span></h1>
+        <h2>Recuperatorio primer parcial Arquitectura Web</h2>
+        <h2>Profesor: Fernando Corinaldesi</h2>
+        <h2>Alumno: Omar Alejandro Bazar</h2>
+    </div>
+
+    <div class="container">
+        <div class="typewriter-container">
+            <div class="typewriter" id="typewriter"></div>
+            <div class="controls">
+                <label for="speedSlider">Velocidad de escritura:</label>
+                <input type="range" id="speedSlider" min="1" max="10" value="5">
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button id="resetTypewriter">Reiniciar Escritura</button>
+            <button id="loadImages">Cargar Imágenes</button>
+            <button id="clearImages">Borrar Imágenes</button>
+        </div>
+
+        <div class="gallery" id="imageGallery">
+            <!-- Aquí se insertarán las imágenes dinámicamente -->
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
